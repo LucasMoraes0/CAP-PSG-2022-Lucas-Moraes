@@ -1,0 +1,55 @@
+--select * from
+
+--CREATE TABLE Forma_Envio (
+
+--ID_Forma_Envio INT NOT NULL IDENTITY (1,1),
+--Descricao_Forma_Envio VARCHAR(MAX) NOT NULL,
+--Valor_Por_Quilo_Forma_Envio DECIMAL (9,2) NOT NULL,
+--CONSTRAINT Pk_Forma_Envio PRIMARY KEY (ID_Forma_Envio)
+--)
+
+--CREATE TABLE Forma_Pagto (
+--	ID_Forma_Pagto INT NOT NULL IDENTITY (1,1),
+--	ID_Tipo_Forma_Pagto INT NOT NULL,
+--	Descricao_Forma_Envio VARCHAR (MAX) NOT NULL,
+--CONSTRAINT Pk_Forma_Pagto PRIMARY KEY (ID_Forma_Pagto)
+
+--)
+
+--CREATE TABLE Tipo_Forma_Pagto (
+--	ID_Tipo_Forma_Pagto INT NOT NULL IDENTITY (1,1),
+--	Descricao_Forma_Pagto VARCHAR (MAX) NOT NULL,
+--CONSTRAINT Pk_Tipo_Forma_Pagto PRIMARY KEY (ID_Tipo_Forma_Pagto)
+--)
+
+--ALTER TABLE Pedido
+--ADD
+--	ID_Forma_Envio INT NOT NULL,
+--	ID_Forma_Pagto VARCHAR(MAX) NOT NULL,
+--	Situacao BIT NULL DEFAULT 1
+--	GO
+
+--ALTER TABLE Forma_Envio
+--ADD
+--	Situacao BIT NULL DEFAULT 1,
+--	DataInclusao DATETIME NULL DEFAULT GETDATE(),
+--	DataAlteracao DATETIME NULL,
+--	DataExclusao DATETIME NULL
+--	GO
+
+
+--ALTER TABLE Tipo_Forma_Pagto
+--ADD
+--	Situacao BIT NULL DEFAULT 1,
+--	DataInclusao DATETIME NULL DEFAULT GETDATE(),
+--	DataAlteracao DATETIME NULL,
+--	DataExclusao DATETIME NULL
+--	GO
+
+--ALTER TABLE Forma_Pagto
+--ADD
+--	Situacao BIT NULL DEFAULT 1,
+--	DataInclusao DATETIME NULL DEFAULT GETDATE(),
+--	DataAlteracao DATETIME NULL,
+--	DataExclusao DATETIME NULL
+--	GO
