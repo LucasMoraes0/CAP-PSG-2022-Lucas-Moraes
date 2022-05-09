@@ -1,0 +1,151 @@
+001 - Crie um programa que leia um número e mostre o seu dobro, seu triplo e sua raiz quadrada.
+
+namespace CAP202204ConsoleApp
+{
+
+    public class Program
+    {
+        static void Main(string[] args)
+        {            
+            Desafio_003();
+            Console.ReadLine();
+            
+        }   
+        public static void Desafio_003()
+        {
+Console.Write("Informe um valor; ");
+            string valor = Console.ReadLine();
+            int num = Convert.ToInt32(valor);
+            int dobro = num * 2;
+            int triplo = num * 3;
+            double raiz = Math.Sqrt(num);
+
+            Console.WriteLine("O dobro de {0} vale {1}. ", valor, dobro);
+            Console.WriteLine("O triplo de {0} vale {1}. ", valor, triplo);
+            Console.WriteLine("A raiz quadrada de {0} vale {1}. ", valor, raiz);
+			
+-------------------------------------------------------------------------------------
+002 - Desenvolva um programa que leia as duas notas de um aluno,  calcule e mostre a sua média.
+
+namespace CAP202204ConsoleApp
+{
+
+    public class Program
+    {
+        static void Main(string[] args)
+        {            
+            Desafio_003();
+            Console.ReadLine();
+            
+        } 			
+			public static void Desafio_002()
+        {
+            Console.Write("Qual a sua nota; ");
+            string Nota1 = Console.ReadLine();
+            Console.Write("Qual a sua nota 2; ");
+            string Nota2 = Console.ReadLine();
+            int media = Convert.ToInt32(Nota1 + Nota2);
+            int media2 = media;  
+
+            Console.WriteLine("Sua média é: {0}",media2);                    
+        }        
+    }
+
+------------------------------------------------------------------------------------
+003 - Escreva um programa que leia um valor em metros e o exiba convertido em centímetros e milímetros.
+
+namespace CAP202204ConsoleApp
+{
+
+    public class Program
+    {
+        static void Main(string[] args)
+        {            
+            Desafio_003();
+            Console.ReadLine();
+            
+        }   
+        public static void Desafio_003()
+        {
+            Console.Write("Qual o valor desejado em metros; ");
+            string metros = Console.ReadLine();
+            int Centi = Convert.ToInt32 (metros) * 100;
+            int Mili = Convert.ToInt32 (Centi) * 10;
+
+            Console.WriteLine("Os valores em centimetro são: {0}", Centi);
+            Console.WriteLine("Em milimetros são: {0}", Mili);                    
+        }        
+    }
+}
+
+------------------------------------------------------------------------------------------
+004 - Faça um programa que leia um número inteiro e mostre na sua tela a sua tabuada.
+
+
+namespace CAP202204ConsoleApp
+{
+
+    public class Program
+    {
+        static void Main(string[] args)
+        {            
+            Desafio_004();
+            Console.ReadLine();
+            
+        }   
+        public static void Desafio_004()
+        {
+            Console.Write("Informe o número a exibir a tabuada; ");
+            string numero = Console.ReadLine();
+            int R1 = Convert.ToInt32(numero) * 1;
+            int R2 = Convert.ToInt32(numero) * 2;
+            int R3 = Convert.ToInt32(numero) * 3;
+            int R4 = Convert.ToInt32(numero) * 4;
+            int R5 = Convert.ToInt32(numero) * 5;
+            int R6 = Convert.ToInt32(numero) * 6;
+            int R7 = Convert.ToInt32(numero) * 7;
+            int R8 = Convert.ToInt32(numero) * 8;
+            int R9 = Convert.ToInt32(numero) * 9;
+            int R10 = Convert.ToInt32(numero) * 10;
+
+
+            Console.WriteLine("X 1 = {0}", R1);
+            Console.WriteLine("X 2 = {0}", R2);
+            Console.WriteLine("X 3 = {0}", R3);
+            Console.WriteLine("X 4 = {0}", R4);
+            Console.WriteLine("X 5 = {0}", R5);
+            Console.WriteLine("X 6 = {0}", R6);
+            Console.WriteLine("X 7 = {0}", R7);
+            Console.WriteLine("X 8 = {0}", R8);
+            Console.WriteLine("X 9 = {0}", R9);
+            Console.WriteLine("X 10 = {0}", R10);
+            Console.WriteLine("Fim");
+        }        
+    }
+}
+
+--------------------------------------------------------------------------------------
+005 - Crie um programa que leia o quanto uma pessoa tem na carteira e mostre quantos dólares ela pode comprar.
+Considere US$ 1,00 = R$ 5,00
+
+namespace CAP202204ConsoleApp
+{
+
+    public class Program
+    {
+        static void Main(string[] args)
+        {            
+            Desafio_005();
+            Console.ReadLine();
+            
+        }   
+        public static void Desafio_005()
+        {
+            Console.Write("Informe quanto você tem na carteira em reais: ");
+            string reais = Console.ReadLine();            
+            int dol = Convert.ToInt32(reais) / 5;
+            
+            Console.WriteLine("Voce pode obter: {0} dólares.", dol);
+        }        
+    }
+}
