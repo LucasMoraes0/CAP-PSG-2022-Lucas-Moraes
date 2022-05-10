@@ -33,23 +33,24 @@ namespace CAP202204ConsoleApp
     public class Program
     {
         static void Main(string[] args)
-        {            
-            Desafio_003();
+        {
+            Desafio_002();
             Console.ReadLine();
-            
-        } 			
-			public static void Desafio_002()
+
+        }
+        public static void Desafio_002()
         {
             Console.Write("Qual a sua nota; ");
-            string Nota1 = Console.ReadLine();
+            int Nota1 = Convert.ToInt32(Console.ReadLine());
             Console.Write("Qual a sua nota 2; ");
-            string Nota2 = Console.ReadLine();
-            int media = Convert.ToInt32(Nota1 + Nota2);
-            int media2 = media;  
+            int Nota2 = Convert.ToInt32(Console.ReadLine());
+            double media = Convert.ToDouble(Nota1 + Nota2) / 2;
+            
 
-            Console.WriteLine("Sua média é: {0}",media2);                    
-        }        
+            Console.WriteLine("Sua média é: {0}", media);
+        }
     }
+}
 
 ------------------------------------------------------------------------------------
 003 - Escreva um programa que leia um valor em metros e o exiba convertido em centímetros e milímetros.
