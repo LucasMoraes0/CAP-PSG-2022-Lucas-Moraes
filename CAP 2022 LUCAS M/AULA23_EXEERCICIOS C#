@@ -1,0 +1,155 @@
+Ex 006 -  Faça um programa que leia a largura e a altura de uma parede em metros, e calcule a sua área e a
+quantidade de tinta necessária para pintá-la, sabendo 
+que cada litro de tinta pinta uma área de 2 metros quadrados.
+
+namespace CAP202204ConsoleApp
+{
+
+    public class Program
+    {
+        static void Main(string[] args)
+        {
+            Desafio_006();
+            Console.ReadLine();
+
+        }
+        public static void Desafio_006()
+        {
+            Console.Write("Qual a largura em metros: ");
+            int Largura = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Altura em metros: ");
+            int Altura = Convert.ToInt32(Console.ReadLine());
+            double Area = Convert.ToDouble(Largura * Altura);
+            int Tinta = Convert.ToInt32(Area / 2);
+
+
+            Console.WriteLine("A área da parede é: {0}m², Você precisara de: {1} litros de tinta", Area, Tinta);
+        }    
+    }     
+}    
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Desafio 007 - Faça um programa que leia o preço de um produto, e mostre seu novo preço, com 5% de desconto.
+
+namespace CAP202204ConsoleApp
+{
+
+    public class Program
+    {
+        static void Main(string[] args)
+        {
+            Desafio_007();
+            Console.ReadLine();
+
+        }
+        public static void Desafio_007()
+        {
+            Console.Write("Qual o valor do produto? ");
+            double Preco = Convert.ToDouble(Console.ReadLine());            
+            double Precop = Convert.ToDouble(Preco - (Preco * 5 / 100));
+            
+            Console.WriteLine("O valor do produto com 5% de desconto é: R${0}", Precop);
+        }
+    }
+}
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Desafio 008 – Faça um programa que leia o salário de um funcionário, e mostre seu novo salário, com 15% de aumento.
+
+
+namespace CAP202204ConsoleApp
+{
+
+    public class Program
+    {
+        static void Main(string[] args)
+        {
+            Desafio_008();
+            Console.ReadLine();
+
+        }
+        public static void Desafio_008()
+        {
+            Console.Write("Qual o seu salário? ");
+            double Salario = Convert.ToDouble(Console.ReadLine());            
+            double SalarioCAumento = Convert.ToDouble(Salario + (Salario * 15 / 100));
+            
+            Console.WriteLine("O seu salário com aumento de 15% é: R${0}", SalarioCAumento);
+        }
+    }
+}
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Desafio 009 – escreva um programa que converta uma temperatura digitada em graus celsius para farenheit.
+
+namespace CAP202204ConsoleApp
+{
+
+    public class Program
+    {
+        static void Main(string[] args)
+        {
+            Desafio_009();
+            Console.ReadLine();
+
+        }
+        public static void Desafio_009()
+        {
+            Console.Write("Qual a temperatura em Celsius? ");
+            double Temperatura = Convert.ToDouble(Console.ReadLine());            
+            double Fahr = Convert.ToDouble((Temperatura * 1.8) + 32);
+            
+            Console.WriteLine("{1}ºC convertido para Fahrenheit ficam {0}", Fahr, Temperatura);
+        }
+    }
+}
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Desafio 010 – Escreva um programa que pergunte a quantidade de km percorridos por um carro alugado, e a quantidade de dias pelos quais ele foi alugado. 
+Calcule o preço a pagar, sabendo que o carro custa R$ 60,00 por dia e R$ 0,15 por km rodado.
+
+namespace CAP202204ConsoleApp
+{
+
+    public class Program
+    {
+        static void Main(string[] args)
+        {
+            Desafio_010();
+            Console.ReadLine();
+
+        }
+        public static void Desafio_010()
+        {
+            Console.Write("Qual a kilometragem que você percorreu durante os dias que alugou o carro? ");
+            double kms = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Quantos dias você alugou o carro? ");
+            double dias = Convert.ToDouble(Console.ReadLine());
+            double valor = Convert.ToDouble((dias * 60) + (kms * 0.15));
+            
+            Console.WriteLine("O valor a ser pago é: R${0}", valor);
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
