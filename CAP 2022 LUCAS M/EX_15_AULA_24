@@ -1,0 +1,56 @@
+namespace CAP202204ConsoleApp
+{
+
+    public class Program
+    {
+        static void Main(string[] args)
+        {
+            
+            Desafio_015();
+            Console.ReadLine();
+
+        }        
+            public static List<string> CriarListaDeNomes()
+        {
+            List<string> listaDeNomes = new List<string>();
+            listaDeNomes.Add("Mateus");
+            listaDeNomes.Add("Pedro");
+            listaDeNomes.Add("Lucas");
+            listaDeNomes.Add("Joao");
+            listaDeNomes.Add("Gustavo");
+            listaDeNomes.Add("Noe");
+            listaDeNomes.Add("Joe");
+            listaDeNomes.Add("Cleber");
+            listaDeNomes.Add("Paulinho");
+            listaDeNomes.Add("Jose");
+            listaDeNomes.Add("Luiz");
+            listaDeNomes.Add("Felipe");
+            return listaDeNomes;
+
+        }
+             public static void Desafio_015()
+        {
+            
+            List<string> lista = CriarListaDeNomes();
+            foreach (string item in lista)
+            {
+            Console.WriteLine(item);
+            }
+            Random rand = new Random();
+            List<string> listaEmbaralhada = lista.OrderBy(x => rand.Next()).ToList();
+            int indice = rand.Next(listaEmbaralhada.Count());  
+            Console.WriteLine("---------------------------------------------------------------------");
+            {
+                Console.WriteLine("Lista Embaralhada:");
+            }
+            foreach(string item in listaEmbaralhada)
+            {
+            Console.WriteLine(item);
+            }
+            {
+                Console.WriteLine("--------------------------------------------------------------------");
+            }
+            Console.WriteLine("O escolhido é: {0}", listaEmbaralhada[indice]);
+        }             
+    }
+}
