@@ -1,0 +1,574 @@
+Desafio 16 - Desenvolva um método que solicite a entrada de um número e calcule se o número é par ou impar.
+
+namespace CAP202204ConsoleApp
+{
+
+    public class Program
+    {
+        static void Main(string[] args)
+        {
+            
+            Desafio_016();
+            Console.ReadLine();
+
+        }        
+          
+             public static void Desafio_016()
+        {
+            Console.WriteLine("Qual número deseja saber se é par ou impar? ");
+            int numero = Convert.ToInt32 (Console.ReadLine());
+            if (numero % 2 == 0) Console.WriteLine("Este número é par!");          
+            else Console.WriteLine("Este número é impar!");            
+        }             
+    }
+}
+
+Desafio 17 - Desenvolva um método que permita a entrada do nome do usuário e exiba
+- Imprima a frase “Olá meu nome é: {nome recebido}”.
+- O nome com todas as letras maiúsculas e minúsculas.
+- Quantas letras ao todo (sem considerar espaços).
+- Quantas letras tem o primeiro nome.
+
+namespace CAP202204ConsoleApp
+{
+
+    public class Program
+    {
+        static void Main(string[] args)
+        {
+            
+            Desafio_017();
+            Console.ReadLine();
+
+        }        
+          
+             public static void Desafio_017()
+        {
+            Console.WriteLine("Qual seu nome?");
+          string nome = Console.ReadLine();
+            Console.WriteLine("Olá, meu nome é {0}", nome);
+            {
+                Console.WriteLine("Esse nome tem {0} letras", QuantLetras(nome));
+            }
+
+             int QuantLetras (string palavra)
+            {
+                int contador = 0;
+                for (int i = 0; i < palavra.Length; i++)
+                {
+                    if (Char.IsLetter(palavra[i]))
+                    {
+                        contador++;
+                    }
+                }
+                return contador;
+            }
+
+        }             
+    }
+}
+
+Desafio 18 - Desenvolva uma calculadora, onde será necessário entrar com a operação, primeiro e segundo valor, exiba o resultado na tela.
+
+    public class Program
+    {
+        static void Main(string[] args)
+        {
+            
+            Desafio_017();
+            Console.ReadLine();
+
+        }        
+          
+             public static void Desafio_017()
+        {
+            double Num1, Num2, Resultado = 0;
+            char Operacao;
+
+            Console.WriteLine("Entre com a operação-->");
+            Console.WriteLine("+ Adição-------------->");
+            Console.WriteLine("- Subtração----------->");
+            Console.WriteLine("* Multiplicação------->");
+            Console.WriteLine("/ Divisão------------->");
+            Console.WriteLine("-----------------------");
+            Console.Write("Operação: ");
+
+            char.TryParse(Console.ReadLine(), out Operacao);
+
+            Console.WriteLine();
+            Console.Write("Informe o primeiro valor: ");
+            double.TryParse(Console.ReadLine(), out Num1);
+
+            Console.WriteLine();
+            Console.Write("Informe o segundo valor: ");
+            double.TryParse(Console.ReadLine(), out Num2);
+
+            Console.WriteLine();
+
+            switch (Operacao)
+            {
+                case '+':
+                    Resultado = Adicao(Num1, Num2);
+                    break;
+                case '-':
+                    Resultado = Subtracao(Num1, Num2);
+                    break;
+                case '*':
+                    Resultado = Multiplicacao(Num1, Num2);
+                    break;
+                case '/':
+                    Resultado = Divisao(Num1, Num2);
+                    break;
+            }
+            Console.WriteLine(string.Format("Resultado: {0}", Resultado));
+            Console.ReadKey();
+        }
+
+        private static Double Adicao(double Num1, double Num2)
+        {
+            return (Num1 + Num2);
+        }
+        private static Double Subtracao(double Num1, double Num2)
+        {
+            return (Num1 - Num2);
+        }
+        private static Double Multiplicacao(double Num1, double Num2)
+        {
+            return (Num1 * Num2);
+        }
+        private static Double Divisao(double Num1, double Num2)
+        {
+            return (Num1 / Num2);
+        }
+    }
+}
+
+Desafio 19 - Desenvolva um método que solicite a entrada da idade de um determinado usuário, 
+se for menor que 18 anos exiba na cor vermelha “Sem permissão”, 
+caso seja maior ou igual a 18 anos exiba na cor verde “Permissão concedida”. 
+Para tanto, pesquise como funciona a propriedade Console.ForegroundColor.
+
+namespace CAP202204ConsoleApp
+{
+
+    public class Program
+    {
+        static void Main(string[] args)
+        {
+            
+            Desafio_019();
+            Console.ReadLine();
+
+        }        
+          
+             public static void Desafio_019()
+        {
+           
+            Console.Write("Informe a sua idade: ");
+            int Idade = Convert.ToInt16(Console.ReadLine());
+
+            if (Idade >= 18)
+            {
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("Acesso permitdo");
+            }
+            else
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Acesso Negado");
+            }
+        }
+    }
+}
+
+Desafio 20 - Desenvolva um método que solicite a entrada de uma frase, após isto troque todas as letras A ou a por &. 
+Para tanto, pesquise como funciona o método String.Replace().
+
+namespace CAP202204ConsoleApp
+{
+
+    public class Program
+    {
+        static void Main(string[] args)
+        {
+            
+            Desafio_020();
+            Console.ReadLine();
+
+        }        
+          
+             public static void Desafio_020()
+        {
+           
+             Program p = new Program();
+            Console.WriteLine("Digite uma frase que contenha a letra 'a' ou 'A'");
+            string resp = Console.ReadLine();
+
+            Console.WriteLine(p.Alterar(resp));
+            Console.ReadKey();
+        }
+        private string Alterar(string resp)
+        {
+            ;
+            if (resp.Trim().Length > 0)
+            {
+                int Total = resp.Length;
+                int Count = 0;
+                var StringBuilder = new StringBuilder(resp);
+                while (Count < Total)
+                {
+                    if (StringBuilder[Count] == 'a')                          
+                    {
+                        StringBuilder[Count] = '&';
+                    }
+                    Count++;
+                }
+                resp = StringBuilder.ToString();
+                return resp;
+            }
+            else
+            {
+                return null;
+            }
+        }
+    }
+}
+
+Desafio 21 - Desenvolva um método que calcule o reajuste salarial. Se o salário for abaixo de 1.700 o ajuste é de R$300.00, 
+se maior o reajuste é de R$ 200.00. Para finalizar, exiba o novo salário na tela.
+
+
+namespace CAP202204ConsoleApp
+{
+
+    public class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Desafio_021();
+            Console.ReadLine();
+        }
+
+        public static void Desafio_021()
+
+        {
+            Program p = new Program();
+            
+            Console.WriteLine("Informe o seu salário atual:");
+            Double Salario = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine();
+            Console.Write("Salario: {0} ", Salario);
+            
+           
+            Console.WriteLine();           
+            Console.Write("Salário atualizado: ");
+            Console.ForegroundColor = ConsoleColor.Green;
+
+            Console.Write(p.CalculaSalario(Salario));
+
+            Console.ReadKey();
+        }
+        private double CalculaSalario(double Salario)
+        {
+            double NovoSalario = 0;
+            if (Salario >= 1700)
+            {
+                NovoSalario = (Salario + 200);
+            }
+            else
+            {
+                NovoSalario = (Salario + 300);
+            }
+            return NovoSalario;
+        }
+    }
+}
+
+Desafio 22 - Desenvolva um método que calcule o IMC de uma determinada pessoa. Para tanto, pesquise como funciona o cálculo do IMC.
+
+namespace CAP202204ConsoleApp
+{
+
+    public class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Desafio_022();
+            Console.ReadLine();
+        }
+
+        public static void Desafio_022()
+
+        {            
+                    Console.Write("Informe o nome: ");
+                    string nome = Console.ReadLine();
+
+                    Console.Write("Informe a idade: ");
+                    double idade = Convert.ToDouble(Console.ReadLine());
+
+                    Console.Write("Informe o peso: ");
+                    double peso = Convert.ToDouble(Console.ReadLine());
+
+                    Console.Write("Informe a altura: ");
+                    double altura = Convert.ToDouble(Console.ReadLine());
+
+                    double imc = Math.Round((peso / (altura * altura)));
+                    
+                    string resultado = Console.ReadLine();
+
+                    if (imc < 18.5)
+                    {
+                        resultado = "Peso abaixo do normal";
+                    }
+                    else if (imc > 18.5 && imc < 25)
+                    {
+                        resultado = "Peso normal";
+                    }
+                    else if (imc > 25 && imc < 30)
+                    {
+                        resultado = "Sobre peso";
+                    }
+                    else if (imc > 30 && imc < 35)
+                    {
+                        resultado = "Grau de obesidade I";
+                    }
+                    else if (imc > 35 && imc < 40)
+                    {
+                        resultado = "Grau de obesidade II";
+                    }
+                    else if (imc > 40)
+                    {
+                        resultado = "Grau de obesidade III";
+                    }
+
+
+                        Console.WriteLine("Olá {0}!", nome);
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.WriteLine();
+                        Console.WriteLine(resultado);
+                        Console.WriteLine();
+                        Console.ResetColor();
+                    
+                Console.WriteLine();
+                Console.WriteLine("Pressione uma tecla para finalizar!");
+                
+            }
+
+        }
+    }
+	
+Desafio 23 - Desenvolva um método que calcule o volume de uma caixa d'água retangular. 
+Para tanto, pesquise como calcular o volume de um retângulo.
+
+namespace CAP202204ConsoleApp
+{
+
+    public class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Desafio_023();
+            Console.ReadLine();
+        }
+
+        public static void Desafio_023()
+
+        {
+            Console.Write("Entre com o comprimento : ");
+            double comprimento = Convert.ToDouble(Console.ReadLine());
+
+            Console.Write("Entre com a largura : "); ;
+            double largura = Convert.ToDouble(Console.ReadLine());
+
+            Console.Write("Entre com a altura : ");
+            double altura = Convert.ToDouble(Console.ReadLine());
+
+            double volume = comprimento * largura * altura;
+
+			Console.Write("Volume da caixa retangular é:{0}m²", volume);
+
+            Console.ReadKey();
+        }
+    }
+}
+
+Desafio 24 - Desenvolva um método que calcule o volume de um Cilindro qualquer. 
+Para tanto, pesquise como calcular o volume de um cilindro.
+
+namespace CAP202204ConsoleApp
+{
+
+    public class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Desafio_024();
+            Console.ReadLine();
+        }
+
+        public static void Desafio_024()
+
+        {
+            Console.Write("Raio da base do cilindro: ");
+            double raio  = Convert.ToDouble(Console.ReadLine());            
+
+            Console.Write("Entre com a altura: ");
+            double altura = Convert.ToDouble(Console.ReadLine());
+
+            double areabase = 3.14 * (raio * raio);
+            double volume = areabase * altura;
+
+        Console.Write("Volume do cilindro é:{0}m²", volume);
+
+            Console.ReadKey();
+        }
+    }
+}
+
+Desafio 25 - Desenvolva um método que calcule o quadrado da diferença entre dois números quaisquer. 
+Para tanto, pesquise como funciona o método Math.Pow.
+
+namespace CAP202204ConsoleApp
+{
+
+    public class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Desafio_025();
+            Console.ReadLine();
+        }
+
+        public static void Desafio_025()
+
+        {
+            Console.WriteLine("Vamos descobrir o quadrado da diferença dos números:");           
+            Console.Write("Digite um valor: ");
+            double valor1  = Convert.ToDouble(Console.ReadLine());            
+
+            Console.Write("Digite outro: ");
+            double valor2 = Convert.ToDouble(Console.ReadLine());       
+            
+            double resultado = Math.Pow (valor1, valor2);
+            
+
+        Console.Write("A diferença é:{0}", resultado);
+
+            Console.ReadKey();
+        }
+    }
+}
+
+Desafio 26 - Desenvolva um método que calcule o volume de uma esfera. Para tanto, pesquise como calcular o volume de uma esfera.
+
+namespace CAP202204ConsoleApp
+{
+
+    public class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Desafio_026();
+            Console.ReadLine();
+        }
+
+        public static void Desafio_026()
+
+        {
+            Console.WriteLine("Vamos descobrir o volume da sua esfera:");           
+            Console.Write("Digite o raio: ");
+            double raio  = Convert.ToDouble(Console.ReadLine());                              
+          
+            
+            double resultado = (4 / 3) * 3.14 * raio * raio * raio;
+            
+
+        Console.Write("O volume da esfera é:{0}", resultado);
+
+            Console.ReadKey();
+        }
+    }
+}
+//V = 4/3 πr³
+
+Desafio 27 - Desenvolva um método que leia dois números reais e efetue as quatro operações entre eles.
+
+namespace CAP202204ConsoleApp
+{
+
+    public class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Desafio_027();
+            Console.ReadLine();
+        }
+
+        public static void Desafio_027()
+
+        {
+            Console.WriteLine("Vamos descobrir umas continhas:");           
+            Console.Write("Digite o valor 1: ");
+            double num1  = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Digite o valor 2: ");
+            double num2 = Convert.ToDouble(Console.ReadLine());
+
+
+
+            double res1 = num1 + num2;
+            double res2 = num1 - num2;
+            double res3 = num1 * num2;
+            double res4 = num1 / num2;
+                           
+            Console.WriteLine("O resultado dessa adição é:{0}", res1);
+            Console.WriteLine("-------------------------------------");
+            Console.WriteLine("O resultado dessa subtração é:{0}", res2);
+            Console.WriteLine("-------------------------------------");
+            Console.WriteLine("O resultado dessa multiplicação é:{0}", res3);
+            Console.WriteLine("-------------------------------------");
+            Console.WriteLine("O resultado dessa divisão é:{0}", res4);
+
+            Console.ReadKey();
+        }
+    }
+}
+
+Desafio 28 - Desenvolva um método que calcule o consumo de combustível, 
+ou seja a quantidade de litros consumidos em uma viagem de veículo.
+
+namespace CAP202204ConsoleApp
+{
+
+    public class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Desafio_027();
+            Console.ReadLine();
+        }
+
+        public static void Desafio_027()
+
+        {
+            Console.WriteLine("Qual a distância você percorreu com seu veículo?");                       
+            double distancia  = Convert.ToDouble(Console.ReadLine());
+            Console.Write("Qual a autonomia do seu veículo? ");
+            double autonomia = Convert.ToDouble(Console.ReadLine());
+
+            double consumo = distancia / autonomia;
+                                                
+            Console.WriteLine("Você ultilizou:{0}L de gasolina", consumo);
+
+            Console.ReadKey();
+        }
+    }
+}
+
