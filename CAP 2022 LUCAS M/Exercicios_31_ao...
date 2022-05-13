@@ -1,0 +1,223 @@
+Desafio 31 - Desenvolva um método que verifique se um número informado é:
+- Se é par ou ímpar
+- Se é multiplo de 2
+- Se é multiplo de 3
+- Se é multiplo de 5
+Dica: if(numero % 2 == 0)
+
+namespace CAP202204ConsoleApp
+{
+
+    public class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Desafio_031();
+            Console.ReadLine();
+        }
+
+        public static void Desafio_031()
+
+        {
+            Console.Write("Qual número deseja descobrir os valores? ");
+            int numero = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine();
+            Console.WriteLine("----------------------------");
+            Console.WriteLine();
+
+            if (numero % 2 == 0) Console.WriteLine("Este número é par!");
+            else Console.WriteLine("Este número é impar!");
+
+            Console.WriteLine();
+            Console.WriteLine("----------------------------");
+            Console.WriteLine();
+
+            {
+                if (numero % 2 == 0) Console.WriteLine("Este número é multiplo de 2!");
+                else Console.WriteLine("Este número não é multiplo de 2!");
+            }
+            Console.WriteLine();
+            Console.WriteLine("----------------------------");
+            Console.WriteLine();
+            {
+                if (numero % 3 == 0) Console.WriteLine("Este número é multiplo de 3!");
+                else Console.WriteLine("Este número não é multiplo de 3!");
+            }
+            Console.WriteLine();
+            Console.WriteLine("----------------------------");
+            Console.WriteLine();
+            {
+                if (numero % 5 == 0) Console.WriteLine("Este número é multiplo de 5!");
+                else Console.WriteLine("Este número não é multiplo de 5!");
+            }
+        }
+    }
+}
+
+Desafio 32 - Crie uma lista com os nomes de uma turma de 20 alunos. 
+Em seguida, elabore um método que solicite a idade de cada um, e armazene em uma lista paralela. 
+Por fim, calcule a idade média da turma.
+
+namespace CAP202204ConsoleApp
+{
+
+    public class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Desafio_032();
+            Console.ReadLine();
+        
+        }
+    public static List<string> CriarListaDeNomes()
+    {
+        List<string> listaDeNomes = new List<string>();
+        listaDeNomes.Add("Elena");
+        listaDeNomes.Add("Elizabeth");
+        listaDeNomes.Add("Sophia");
+        listaDeNomes.Add("Laura");
+        listaDeNomes.Add("Cecília");
+        listaDeNomes.Add("Aurora");
+        listaDeNomes.Add("Flor");
+        listaDeNomes.Add("Sarah");
+        listaDeNomes.Add("Valentina");
+        listaDeNomes.Add("Isabela");
+        listaDeNomes.Add("Valerie");
+        listaDeNomes.Add("Anna");
+        listaDeNomes.Add("Alice");
+        listaDeNomes.Add("Rosa");
+        listaDeNomes.Add("Patricia");
+        listaDeNomes.Add("Anita");
+        listaDeNomes.Add("Natalya");
+        listaDeNomes.Add("Christine");
+        listaDeNomes.Add("Marina");
+        listaDeNomes.Add("Carmen");
+        return listaDeNomes;
+
+    }
+    public static void Desafio_032()
+    {
+
+        
+        List<string> lista = CriarListaDeNomes();
+            
+            Console.WriteLine(lista);
+        
+        
+}
+
+//Desafio 34 - Desenvolva um método que imprima a soma dos números de 1 até 1000.
+
+namespace CAP202204ConsoleApp
+{
+
+    public class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Desafio_034();
+            Console.ReadLine();
+
+        }
+        public static void Desafio_034()
+        {
+            int soma = 0;
+            for (int i = 1; i <= 1000; i++)
+            {
+                soma += i;
+            }
+
+            Console.WriteLine("A soma dos números de um até mil é: " + soma);
+
+
+
+
+
+        }
+    }
+}
+
+//Desafio 35 - Desenvolva um método que imprima todos os múltiplos de 3, entre 1 e 100.
+//Dica: para saber se um número é múltiplo de 3, você pode fazer if(numero % 3 == 0).
+
+namespace CAP202204ConsoleApp
+{
+
+    public class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Desafio_035();
+            Console.ReadLine();
+
+        }
+        public static void Desafio_035()
+        {
+
+            for (int i = 1; i <= 100; i++)
+            {
+                if (i % 3 == 0)
+                {
+                    Console.WriteLine(i);
+                }
+            }
+        }
+    }
+}
+
+// Desafio 36 - Uma pessoa só pode votar em eleições brasileiras se ela for maior que 16 anos e for cidadã brasileira. 
+    //Desenvolva um método que leia uma lista previamente carregada com o nome de 10 pessoas. 
+    //Em seguida, solicite a idade da pessoa, e sua nacionalidade, armazenando em listas paralelas. 
+    //Por fim, verifique quantas pessoas estão aptas a votar ou não, de acordo com os dados armazenados.
+
+namespace CAP202204ConsoleApp
+{
+
+    public class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Desafio_036();
+            Console.ReadLine();
+
+        }
+        public static List<string> CriarListaDeNomes ()
+        {
+        List<string> listaDeNomes = new List<string>();
+            listaDeNomes.Add("Elena");
+            listaDeNomes.Add("Elizabeth");
+            listaDeNomes.Add("Sophia");
+            listaDeNomes.Add("Laura");
+            listaDeNomes.Add("Cecília");
+            listaDeNomes.Add("Aurora");
+            listaDeNomes.Add("Flor");
+            listaDeNomes.Add("Sarah");
+            listaDeNomes.Add("Valentina");
+            listaDeNomes.Add("Isabela");
+            listaDeNomes.Add("Valerie");
+            listaDeNomes.Add("Anna");
+            listaDeNomes.Add("Alice");
+            listaDeNomes.Add("Rosa");
+            listaDeNomes.Add("Patricia");
+            listaDeNomes.Add("Anita");
+            listaDeNomes.Add("Natalya");
+            listaDeNomes.Add("Christine");
+            listaDeNomes.Add("Marina");
+            listaDeNomes.Add("Carmen");
+            return listaDeNomes;
+
+        }
+        public static void Desafio_036()
+        {
+            
+
+
+        }
+    }
+}
