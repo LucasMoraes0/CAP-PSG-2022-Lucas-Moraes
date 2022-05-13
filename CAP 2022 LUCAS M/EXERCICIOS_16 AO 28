@@ -572,3 +572,79 @@ namespace CAP202204ConsoleApp
     }
 }
 
+Desafio 29 - Desenvolva um método que calcule o valor de uma prestação em atraso, 
+baseado em uma taxa de juros informada pelo usuário.
+
+namespace CAP202204ConsoleApp
+{
+
+    public class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Desafio_029();
+            Console.ReadLine();
+        }
+
+        public static void Desafio_029()
+
+        {
+            Console.WriteLine("Qual o valor da sua prestação?");                       
+            double valorp  = Convert.ToDouble(Console.ReadLine());
+            Console.Write("E qual o juros que você pagará? (%) ");
+            double porcjuros = Convert.ToDouble(Console.ReadLine());
+
+            double valorjuros = valorp * (porcjuros / 100);
+            double valortotal = valorp + valorjuros;
+                                                
+            Console.WriteLine("O valor que você pagará com juros é: {0}", valortotal);
+
+            Console.ReadKey();
+        }
+    }
+}
+
+Desafio 30 - Desenvolva um método que identifique o maior e o menor número dentre 5 números fornecidos pelo usuário.
+
+namespace CAP202204ConsoleApp
+{
+
+    public class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Desafio_030();
+            Console.ReadLine();
+        }
+
+        public static void Desafio_030()
+
+        {
+            float numMaior = 0;
+            float numMenor = 0;
+            for (int i = 0; i < 5; i++)
+            {
+                Console.Clear();
+                Console.WriteLine("Informe um número qualquer: ");
+                float num = Convert.ToSingle(Console.ReadLine());
+                if (i == 0)
+                {
+                    numMaior = num;
+                    numMenor = num;
+                }
+                else if (num > numMaior)
+                {
+                    numMaior = num;
+                }
+                else if (num < numMenor)
+                {
+                    numMenor = num;
+                }
+                Console.WriteLine("O maior número é {0} e o menor é {1}.", numMaior, numMenor);
+
+            }           
+        }
+    }
+}
