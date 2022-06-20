@@ -1,27 +1,28 @@
-< PROFISSOS >
-	< PROFISSAO >
-		< CODIGO >1</ CODIGO >
-		< DESCRIÇÃO >Administrador </ DESCRIÇÃO >
-		< SITUAÇÃO >1</ SITUAÇÃO >
-	< PROFISSAO >
-	< PROFISSAO >
-		< CODIGO >2</ CODIGO >
-		< DESCRIÇÃO > Contador </ DESCRIÇÃO >
-		< SITUAÇÃO >1</ SITUAÇÃO >
-	< PROFISSAO >
-	< PROFISSAO >
-		< CODIGO >3</ CODIGO >
-		< DESCRICAO > Engenheiro de Produção </ DESCRICAO >
-		< SITUAÇÃO >1</ SITUAÇÃO >
-	< PROFISSAO >
-	< PROFISSAO >
-		< CODIGO >4</ CODIGO >
-		< DESCRICAO > Engenheiro de Computação </ DESCRICAO >
-		< SITUAÇÃO >1</ SITUAÇÃO >
-	< PROFISSAO >
-	< PROFISSAO >
-		< CODIGO >5</ CODIGO >
-		< DESCRICAO > Economista </ DESCRICAO >
-		< SITUAÇÃO >1</ SITUAÇÃO >
-	< PROFISSAO >
-</ PROFISSOS >
+<?xml version="1.0" encoding="utf-8" ?>
+<Profissoes>
+	<Profissao>
+		<Codigo>1</Codigo>
+		<Descricao>Administrador </Descricao>
+		<Situacao>1</Situacao>
+	</Profissao>
+	<Profissao>
+		<Codigo>2</Codigo>
+		<Descricao> Contador </Descricao>
+		<Situacao>1</Situacao>
+	</Profissao>
+	<Profissao>
+		<Codigo>3</Codigo>
+		<Descricao> Engenheiro de Produção </Descricao>
+		<Situacao>1</Situacao>
+	</Profissao>
+	<Profissao>
+		<Codigo>4</Codigo>
+		<Descricao> Engenheiro de Computação </Descricao>
+		<Situacao>1</Situacao>
+	</Profissao>
+	<Profissao>
+		<Codigo>5</Codigo>
+		<Descricao> Economista </Descricao>
+		<Situacao>1</Situacao>
+	</Profissao>
+</Profissoes>
