@@ -1,0 +1,30 @@
+
+{
+	"profissao": [
+	{
+		"codigo": 1,
+		"descricao": "Contador ",
+		"situacao": 1
+	},
+	{
+		"codigo": 2,
+		"descricao": "Engenheiro de Produção ",
+		"situacao": 1
+	},
+	{
+		"codigo": 3,
+		"descricao": "Engenheiro de Computação ",
+		"situacao": 1
+	},
+	{
+		"codigo": 4,
+		"descricao": "Administrador ",
+		"situacao": 1
+	},
+	{
+		"codigo": 5,
+		"descricao": "Economista ",
+		"situacao": 1
+	}
+	]
+}

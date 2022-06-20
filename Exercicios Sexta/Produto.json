@@ -1,0 +1,39 @@
+ 
+{
+	"produto": [
+	{
+		"codigo": 1,
+		"codigo_subcategoria": 2,
+		"codigo_categoria": 3,
+		"descricao": "ISO Protein Zero Carb (900g) - Integralmédica",
+		"situacao": 1
+	},
+	{
+		"codigo": 2,
+		"codigo_subcategoria": 2,
+		"codigo_categoria": 3,
+		"descricao": "Whey Protein - Extreme Whey Protein Solaris",
+		"situacao": 1
+	},
+	{
+		"codigo": 3,
+		"codigo_subcategoria": 2,
+		"codigo_categoria": 3,
+		"descricao": "Pro Muscle - Probiótica",
+		"situacao": 1
+	},
+	{
+		"codigo": 4,
+		"codigo_subcategoria": 2,
+		"codigo_categoria": 3,
+		"descricao": "Micellar Pro (Protein Time-Release) - Atlhetica Evolution",
+		"situacao": 1
+	},
+	{
+		"codigo": 5,
+		"codigo_subcategoria": 2,
+		"codigo_categoria": 3,
+		"descricao": "Elite Fusion 7 - Dymatize",
+		"situacao": 1
+	},
+}

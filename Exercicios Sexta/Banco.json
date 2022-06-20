@@ -1,0 +1,35 @@
+
+{
+	"banco": [
+	{
+		"codigo": 1,
+		"codigo_banco": 001,
+		"descricao": "Banco do Brasil S.A.",
+		"situacao": 1
+	},
+	{
+		"codigo": 2,
+		"codigo_banco": 033,
+		"descricao": "Banco Santander (Brasil) S.A.",
+		"situacao": 1
+	},
+	{
+		"codigo": 3,
+		"codigo_banco": 104,
+		"descricao": "Caixa Econômica Federal.",
+		"situacao": 1
+	},
+	{
+		"codigo": 4,
+		"codigo_banco": 237,
+		"descricao": "Banco Bradesco S.A.",
+		"situacao": 1
+	},
+	{
+		"codigo": 6,
+		"codigo_banco": 341,
+		"descricao": "Banco Itaú S.A.",
+		"situacao": 1
+	}
+	]
+}

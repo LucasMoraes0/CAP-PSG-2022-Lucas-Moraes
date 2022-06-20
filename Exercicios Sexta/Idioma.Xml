@@ -1,0 +1,32 @@
+< IDIOMAS >
+	< IDIOMA >
+		< CODIGO >1</ CODIGO >
+		< ABREVIACAO >PT</ ABREVIACAO >
+		< DESCRICAO >Português (Brasil)</ DESCRICAO >
+		< SITUAÇÃO >1</ SITUAÇÃO >
+	</ IDIOMA >
+	< IDIOMA >
+		< CODIGO >2</ CODIGO >
+		< ABREVIACAO >PL</ ABREVIACAO >
+		< DESCRICAO > Norueguês (Nynorsk) </ DESCRICAO >
+		< SITUAÇÃO >1</ SITUAÇÃO >
+	</ IDIOMA >
+	< IDIOMA >
+		< CODIGO >3</ CODIGO >
+		< ABREVIACAO >RU</ ABREVIACAO >
+		< DESCRICAO >Romeno (República da Moldávia)</ DESCRICAO >
+		< SITUAÇÃO >1</ SITUAÇÃO >
+	</ IDIOMA >
+	< IDIOMA >
+		< CODIGO >4</ CODIGO >
+		< ABREVIACAO >ES-GT</ ABREVIACAO >
+		< DESCRIÇÃO > Espanhol (México) </ DESCRIÇÃO >
+		< SITUAÇÃO >1</ SITUAÇÃO >
+	</ IDIOMA >
+	< IDIOMA >
+		< CODIGO >5</ CODIGO >
+		< ABREVIACAO >UK-RU</ ABREVIACAO >
+		< DESCRIÇÃO > Turco</ DESCRIÇÃO >
+		< SITUAÇÃO >1</ SITUAÇÃO >
+	</ IDIOMA >
+</ IDIOMAS >

@@ -1,0 +1,27 @@
+< PROFISSOS >
+	< PROFISSAO >
+		< CODIGO >1</ CODIGO >
+		< DESCRIÇÃO >Administrador </ DESCRIÇÃO >
+		< SITUAÇÃO >1</ SITUAÇÃO >
+	< PROFISSAO >
+	< PROFISSAO >
+		< CODIGO >2</ CODIGO >
+		< DESCRIÇÃO > Contador </ DESCRIÇÃO >
+		< SITUAÇÃO >1</ SITUAÇÃO >
+	< PROFISSAO >
+	< PROFISSAO >
+		< CODIGO >3</ CODIGO >
+		< DESCRICAO > Engenheiro de Produção </ DESCRICAO >
+		< SITUAÇÃO >1</ SITUAÇÃO >
+	< PROFISSAO >
+	< PROFISSAO >
+		< CODIGO >4</ CODIGO >
+		< DESCRICAO > Engenheiro de Computação </ DESCRICAO >
+		< SITUAÇÃO >1</ SITUAÇÃO >
+	< PROFISSAO >
+	< PROFISSAO >
+		< CODIGO >5</ CODIGO >
+		< DESCRICAO > Economista </ DESCRICAO >
+		< SITUAÇÃO >1</ SITUAÇÃO >
+	< PROFISSAO >
+</ PROFISSOS >

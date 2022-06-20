@@ -1,0 +1,27 @@
+< CATEGORIAS >
+	< CATEGORIA >
+		< CODIGO >1</ CODIGO >
+		< DESCRICAO >Pães</ DESCRICAO >
+		< SITUAÇÃO >1</ SITUAÇÃO >
+	</ CATEGORIA >
+	< CATEGORIA >
+		< CODIGO >2</ CODIGO >
+		< DESCRICAO >Suplementos</ DESCRICAO >
+		< SITUAÇÃO >1</ SITUAÇÃO >
+	</ CATEGORIA >
+	< CATEGORIA >
+		< CODIGO >3</ CODIGO >
+		< DESCRICAO >Sopas e Cremes</ DESCRICAO >
+		< SITUAÇÃO >1</ SITUAÇÃO >
+	</ CATEGORIA >
+	< CATEGORIA >
+		< CODIGO >4</ CODIGO >
+		< DESCRICAO >Frios e Embutidos</ DESCRICAO >
+		< SITUAÇÃO >1</ SITUAÇÃO >
+	</ CATEGORIA >
+	< CATEGORIA >
+		< CODIGO >5</ CODIGO >
+		< DESCRICAO >Carnes</ DESCRICAO >
+		< SITUAÇÃO >1</ SITUAÇÃO >
+	</ CATEGORIA >
+</ CATEGORIAS >

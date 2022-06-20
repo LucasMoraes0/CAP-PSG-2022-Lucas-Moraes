@@ -1,0 +1,30 @@
+
+{
+	"categoria": [
+	{
+		"codigo": 1,
+		"descricao": "Pães",
+		"situacao": 1
+	},
+	{
+		"codigo": 2,
+		"descricao": "Suplementos",
+		"situacao": 1
+	},
+	{
+		"codigo": 3,
+		"descricao": "Sopas e Cremes",
+		"situacao": 1
+	},
+	{
+		"codigo": 4,
+		"descricao": "Frios e Embutidos",
+		"situacao": 1
+	},
+	{
+		"codigo": 5,
+		"descricao": "Carnes",
+		"situacao": 1
+	}
+	]
+}

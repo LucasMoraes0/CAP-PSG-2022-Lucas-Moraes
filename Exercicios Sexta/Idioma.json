@@ -1,0 +1,36 @@
+
+
+{
+	"idioma": [
+	{
+		"codigo": 1,
+		"abreviacao_idioma": "PT",
+		"descricao": "Português",
+		"situacao": "true"
+	},
+	{
+		"codigo": 2,
+		"abreviacao_idioma": "PL",
+		"descricao": "Norueguês",
+		"situacao": "true"
+	},
+	{
+		"codigo": 3,
+		"abreviacao_idioma": "RU",
+		"descricao": "Romeno",
+		"situacao": "true"
+	},
+	{
+		"codigo": 4,
+		"abreviacao_idioma": "ES-GT",
+		"descricao": "Espanhol (México)",
+		"situacao": "true"
+	},
+	{
+		"codigo": 5,
+		"abreviacao_idioma": "UK-RU",
+		"descricao": "Turco",
+		"situacao": "true"
+	}
+	]
+}

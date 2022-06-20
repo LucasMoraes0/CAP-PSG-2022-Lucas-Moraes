@@ -1,0 +1,35 @@
+
+{
+	"subcategoria":[
+	{
+		"codigo": 1,
+		"codigo_categoria": 2,
+		"descricao": "Refrigerante",
+		"situacao": 1
+	},
+	{
+		"codigo": 2,
+		"codigo_categoria": 1,
+		"descricao": "Arroz",
+		"situacao": 1
+	},
+	{
+		"codigo": 3,
+		"codigo_categoria": 2,
+		"descricao": "Sucos",
+		"situacao": 1
+	},
+	{
+		"codigo": 4,
+		"codigo_categoria": 4,
+		"descricao": "Carnes",
+		"situacao": 1
+	},
+	{
+		"codigo": 5,
+		"codigo_categoria": 1,
+		"descricao": "Carboidratos",
+		"situacao": 1
+	}
+	]
+}
