@@ -1,27 +1,28 @@
-< CATEGORIAS >
-	< CATEGORIA >
-		< CODIGO >1</ CODIGO >
-		< DESCRICAO >Pães</ DESCRICAO >
-		< SITUAÇÃO >1</ SITUAÇÃO >
-	</ CATEGORIA >
-	< CATEGORIA >
-		< CODIGO >2</ CODIGO >
-		< DESCRICAO >Suplementos</ DESCRICAO >
-		< SITUAÇÃO >1</ SITUAÇÃO >
-	</ CATEGORIA >
-	< CATEGORIA >
-		< CODIGO >3</ CODIGO >
-		< DESCRICAO >Sopas e Cremes</ DESCRICAO >
-		< SITUAÇÃO >1</ SITUAÇÃO >
-	</ CATEGORIA >
-	< CATEGORIA >
-		< CODIGO >4</ CODIGO >
-		< DESCRICAO >Frios e Embutidos</ DESCRICAO >
-		< SITUAÇÃO >1</ SITUAÇÃO >
-	</ CATEGORIA >
-	< CATEGORIA >
-		< CODIGO >5</ CODIGO >
-		< DESCRICAO >Carnes</ DESCRICAO >
-		< SITUAÇÃO >1</ SITUAÇÃO >
-	</ CATEGORIA >
-</ CATEGORIAS >
+<?xml version="1.0" encoding="utf-8" ?>
+<Categorias>
+	<Categoria>
+		<Codigo>1</Codigo>
+		<Descricao>Pães</Descricao>
+		<Situacao>1</Situacao>
+	</Categoria>
+	<Categoria>
+		<Codigo>2</Codigo>
+		<Descricao>Suplementos</Descricao>
+		<Situacao>1</Situacao>
+	</Categoria>
+	<Categoria>
+		<Codigo>3</Codigo>
+		<Descricao>Sopas e Cremes</Descricao>
+		<Situacao>1</Situacao>
+	</Categoria>
+	<Categoria>
+		<Codigo>4</Codigo>
+		<Descricao>Frios e Embutidos</Descricao>
+		<Situacao>1</Situacao>
+	</Categoria>
+	<Categoria>
+		<Codigo>5</Codigo>
+		<Descricao>Carnes</Descricao>
+		<Situacao>1</Situacao>
+	</Categoria>
+</Categorias>
