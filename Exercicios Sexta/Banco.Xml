@@ -1,32 +1,33 @@
-< BANCOS >
-	< BANCO >
-		< CODIGO >1</ CODIGO >
-		< CODIGO_BANCO >001</ CODIGO_BANCO >
-		< DESCRIÇÃO >Banco do Brasil S.A.</ DESCRIÇÃO >
-		< SITUAÇÃO >1</ SITUAÇÃO >
-	</ BANCO >
-	< BANCO >
-		< CODIGO >2</ CODIGO >
-		< CODIGO_BANCO >033</ CODIGO_BANCO >
-		< DESCRIÇÃO >Banco Santander (Brasil) S.A.</ DESCRIÇÃO >
-		< SITUAÇÃO >1</ SITUAÇÃO >
-	</ BANCO >
-	< BANCO >
-		< CODIGO >3</ CODIGO >
-		< CODIGO_BANCO >104</ CODIGO_BANCO >
-		< DESCRIÇÃO >Caixa Econômica Federal.</ DESCRIÇÃO >
-		< SITUAÇÃO >1</ SITUAÇÃO >
-	</ BANCO >
-	< BANCO >
-		< CODIGO >4</ CODIGO >
-		< CODIGO_BANCO >237</ CODIGO_BANCO >
-		< DESCRIÇÃO >Banco Bradesco S.A.</ DESCRIÇÃO >
-		< SITUAÇÃO >1</ SITUAÇÃO >
-	</ BANCO >
-	< BANCO >
-		< CODIGO >6</ CODIGO >
-		< CODIGO_BANCO >341</ CODIGO_BANCO >
-		< DESCRIÇÃO >Banco Itaú S.A.</ DESCRIÇÃO >
-		< SITUAÇÃO >1</ SITUAÇÃO >
-	</ BANCO >
-</ BANCOS >
+<?xml version="1.0" encoding="utf-8" ?>
+<Bancos>
+	<Banco>
+		<Codigo>1</Codigo>
+		<CodigoBanco>001</CodigoBanco>
+		<Descricao>Banco do Brasil S.A.</Descricao>
+		<Situacao>1</Situacao>
+	</Banco>
+	<Banco>
+		<Codigo>2</Codigo>
+		<CodigoBanco>033</CodigoBanco>
+		<Descricao>Banco Santander (Brasil) S.A.</Descricao>
+		<Situacao>1</Situacao>
+	</Banco>
+	<Banco>
+		<Codigo>3</Codigo>
+		<CodigoBanco>104</CodigoBanco>
+		<Descricao>Caixa Econômica Federal.</Descricao>
+		<Situacao>1</Situacao>
+	</Banco>
+	<Banco>
+		<Codigo>4</Codigo>
+		<CodigoBanco>237</CodigoBanco>
+		<Descricao>Banco Bradesco S.A.</Descricao>
+		<Situacao>1</Situacao>
+	</Banco>
+	<Banco>
+		<Codigo>6</Codigo>
+		<CodigoBanco>341</CodigoBanco>
+		<Descricao>Banco Itaú S.A.</Descricao>
+		<Situacao>1</Situacao>
+	</Banco>
+</Bancos>
