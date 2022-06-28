@@ -1,0 +1,57 @@
+--CREATE TABLE [dbo].[Funcionario](    
+--	[ID_Funcionario] [bigint] IDENTITY(1,1) NOT NULL,
+--	[ID_FuncDadosEmpresa] [bigint] NOT NULL,
+--	[Matricula_Funcionario] [bigint] NOT NULL,
+--	[Nome_Funcionario] [varchar](max) NOT NULL,
+--	[Sobrenome_Funcionario] [varchar](max) NOT NULL,
+--	[Data_Admissao_Funcionario] [datetime] NOT NULL,
+--	[Sexo_Funcionario] [char](1) NOT NULL,
+--	[Datanasc_Funcionario] [datetime] NOT NULL,
+--	[Email_Funcionario] [varchar](max) NOT NULL,
+--	[ID_Pais] [int] NOT NULL,
+--	[Ctps_Funcionario] [varchar](50) NOT NULL,
+--	[Ctps_Num_Funcionario] [bigint] NOT NULL,
+--	[Ctps_Serie_Funcionario] [int] NOT NULL,
+--	[Situacao] [bit] NULL DEFAULT 1,
+--	[DataInclusao] [datetime] NULL,
+--	[DataAlteracao] [datetime] NULL,
+--	[DataExclusao] [datetime] NULL
+--	CONSTRAINT PK_Funcionario PRIMARY KEY (ID_Funcionario)
+--	)
+--	GO
+
+SET IDENTITY_INSERT Funcionario ON
+
+INSERT INTO Funcionario ( ID_Funcionario, ID_FuncDadosEmpresa, Matricula_Funcionario, Nome_Funcionario, Sobrenome_Funcionario, Data_Admissao_Funcionario, Sexo_Funcionario,
+Datanasc_Funcionario, Email_Funcionario, ID_Pais, Ctps_Funcionario, Ctps_Num_Funcionario, Ctps_Serie_Funcionario, Situacao, DataInclusao, DataAlteracao, DataExclusao)
+
+SELECT 
+	Funcionario_Dados_Pessoais.ID_Funcionario,
+	Funcionarios_Dados_Empresa.ID_FuncDadosEmpresa, 
+	Funcionario_Dados_Pessoais.Matricula_Funcionario, 
+	Funcionario_Dados_Pessoais.Nome_funcionario, 
+	Funcionario_Dados_Pessoais.Sobrenome_Funcionario, 
+    Funcionarios_Dados_Empresa.Data_Admissao_Funcionario, 
+	Funcionario_Dados_Pessoais.Sexo_Funcionario, 
+	Funcionario_Dados_Pessoais.Datanasc_Funcionario, 
+	Funcionario_Dados_Pessoais.Email_Funcionario, 
+	Funcionario_Dados_Pessoais.ID_Pais, 
+	Funcionarios_Dados_Empresa.Ctps_Funcionario, 
+	Funcionarios_Dados_Empresa.Ctps_Num_Funcionario, 
+	Funcionarios_Dados_Empresa.Ctps_Serie_Funcionario, 
+	Funcionario_Dados_Pessoais.Situacao, 
+	Funcionario_Dados_Pessoais.DataInclusao, 
+	Funcionario_Dados_Pessoais.DataAlteracao, 
+	Funcionario_Dados_Pessoais.DataExclusao
+
+FROM Funcionario_Dados_Pessoais INNER JOIN
+
+    Funcionarios_Dados_Empresa ON 
+	Funcionario_Dados_Pessoais.Matricula_Funcionario = 
+	Funcionarios_Dados_Empresa.Matricula_Funcionario AND 
+    Funcionario_Dados_Pessoais.Nome_funcionario = 
+	Funcionarios_Dados_Empresa.Nome_Funcionario AND 
+	Funcionario_Dados_Pessoais.Sobrenome_Funcionario = 
+	Funcionarios_Dados_Empresa.Sobrenome_Funcionario
+
+SET IDENTITY_INSERT Funcionario ON
